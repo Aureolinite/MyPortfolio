@@ -1,27 +1,28 @@
 :root {
-  --nav-hover: #2f6f6f;
   --bg: #f7f5f2;
   --surface: #ffffff;
   --text: #222222;
-  --accent: #2f6f6f;
-  --accent-dark: #1f4f4f;
-  --header-bg: #1f4f4f;
+  --accent: #6cb8ff;
+  --accent-dark: #13223d;
+  --header-bg: #0d2b57;
   --header-text: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #121816;
-    --surface: #1c2523;
-    --text: #e8eceb;
-    --accent: #5fb3b3;
-   --accent-dark: #8FD0D0
+    --bg: #0b1426;
+    --surface: #13223d;
+    --text: #e6edf7;
+    --accent: #6cb8ff;
+    --accent-dark: #9ccfff;
+    --header-bg: #0d2b57;
+    --header-text: #ffffff;
+    --nav-hover: #1e4a8a;
   }
 
   section {
     box-shadow: none;
   }
 }
-/* ===== Reset and base ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,8 +39,7 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
-
-/* ===== Headings (second font family) ===== */
+/* Headings (second font family) */
 h1, h2, h3 {
   font-family: Georgia, serif;
   line-height: 1.2;
@@ -49,7 +49,7 @@ h1 { font-size: 2rem; }
 h2 { font-size: 1.6rem; color: var(--accent-dark); margin-bottom: 1rem; }
 h3 { font-size: 1.2rem; margin: 1rem 0 0.5rem; }
 
-/* ===== Header and navigation ===== */
+/* Header and navigation */
 header {
   background: var(--header-bg);
   color: var(--header-text);
@@ -82,7 +82,7 @@ nav a:focus {
   background: var(--nav-hover);
 }
 
-/* ===== Main layout ===== */
+/* Main layout */
 main {
   max-width: 1000px;
   margin: 2rem auto;
@@ -98,7 +98,7 @@ section {
   scroll-margin-top: 90px; /* keeps heading visible under sticky header */
 }
 
-/* ===== Lists and links ===== */
+/* Lists and links */
 ul {
   padding-left: 1.5rem;
 }
@@ -107,7 +107,7 @@ a {
   color: var(--accent);
 }
 
-/* ===== Images ===== */
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -143,7 +143,7 @@ article {
   flex: 1 1 300px;
 }
 
-/* ===== Footer ===== */
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
@@ -152,7 +152,7 @@ footer {
   color: var(--header-text);
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
