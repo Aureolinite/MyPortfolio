@@ -1,3 +1,4 @@
+/* colors sa normal kg dark mode */
 :root {
   --bg: #f7f5f2;
   --surface: #ffffff;
@@ -49,7 +50,7 @@ h1 { font-size: 2rem; }
 h2 { font-size: 1.6rem; color: var(--accent-dark); margin-bottom: 1rem; }
 h3 { font-size: 1.2rem; margin: 1rem 0 0.5rem; }
 
-/* Header and navigation */
+/* Header and nav */
 header {
   background: var(--header-bg);
   color: var(--header-text);
@@ -95,10 +96,10 @@ section {
   margin-bottom: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  scroll-margin-top: 90px; /* keeps heading visible under sticky header */
+  scroll-margin-top: 90px; /* para kits ang geading sa header */
 }
 
-/* Lists and links */
+/* Da lists and links */
 ul {
   padding-left: 1.5rem;
 }
@@ -122,12 +123,12 @@ img {
   margin-bottom: 1rem;
 }
 
-/* ===== Cards (experience, projects, seminars) ===== */
+/* Knowledgemaxxing Cards (experience, projects, seminars) */
 article {
   margin-bottom: 1.5rem;
 }
 
-/* Projects side by side on wide screens */
+/* para side by side projects on wide screens */
 #projects {
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +144,88 @@ article {
   flex: 1 1 300px;
 }
 
-/* Footer */
+/* Contact */
+.contact-info i {
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+
+.socials a {
+  color: var(--accent);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.socials a:hover,
+.socials a:focus {
+  color: var(--accent-dark);
+}
+.contact-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-info {
+  flex: 1 1 250px;
+}
+
+.contact-info p {
+  margin-bottom: 0.75rem;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.contact-form {
+  flex: 2 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-family: inherit;
+  text-decoration: none;
+  color: var(--header-text);
+  background: var(--header-bg);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--nav-hover);
+}
+
+/* De-Footer */
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
