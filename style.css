@@ -147,19 +147,19 @@ article {
 /* Project image hover effect */
 #projects img {
   transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  position: relative; 
 }
 
-@media (hover: hover) {
-  #projects:hover img:not(:hover) {
-    filter: blur(4px);
-  }
+/* butangi @media hover: hover if for pc lng
+#projects:hover img:not(:hover) {
+  filter: blur(4px);
+}
+*/
 
-  #projects img:hover {
-    transform: scale(1.5);
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-  }
+ #projects img:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 /* Contact */
